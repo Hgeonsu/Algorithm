@@ -5,7 +5,7 @@ using namespace std;
 
 int n, m, map[502][502], vis[502][502];
 queue<pair<int, int> > q;
-int dx[4] = { 1, -1, 0, 0 }; //ÁÂÇ¥ ±×´ë·Î µ¿¼­³²ºÏ ¼ø
+int dx[4] = { 1, -1, 0, 0 }; //ì¢Œí‘œ ê·¸ëŒ€ë¡œ ë™ì„œë‚¨ë¶ ìˆœ
 int dy[4] = { 0, 0, 1, -1 }; 
 
 int bfs(pair<int,int> start) {
@@ -32,7 +32,7 @@ int bfs(pair<int,int> start) {
 }
 int main(void) {
 	int max = 0, cnt = 0;
-	int result=0; // ÃÊ±âÈ­ ¾ÈÇØÁà¼­ Æ²·È¾úÀ½
+	int result=0; // ì´ˆê¸°í™” ì•ˆí•´ì¤˜ì„œ í‹€ë ¸ì—ˆìŒ
 	cin >> n >> m;
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {
